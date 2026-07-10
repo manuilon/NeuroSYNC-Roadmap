@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/styles.css">
+  <script src="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: var(--color-white); }
+    a { color: var(--color-purple); }
+    a:hover { color: var(--color-purple-light); }
+    ::selection { background: var(--color-neutral-pale-purple); }
+  </style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--text-body); background: var(--color-white);" data-screen-label="Survey Results">
+
+  <header style="display:flex; align-items:center; justify-content:space-between; padding: var(--space-4) var(--space-8); border-bottom: 1px solid var(--color-neutral-pale-purple);">
+    <sc-if value="{{ logoHorizontalSrc }}" hint-placeholder-val="{{ true }}">
+      <img src="{{ logoHorizontalSrc }}" alt="NeuroSYNC – UK Multidisciplinary Centre for Neuromorphic Systems and Computing" style="height:56px;width:auto;display:block">
+    </sc-if>
+    <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Button" variant="outline" href="index.html" hint-size="auto,40px">← Back to Roadmap</x-import>
+  </header>
+
+  <!-- Hero image -->
+  <div style="width:100%; height:320px; overflow:hidden; background: var(--color-black);">
+    <img src="assets/brain-chip-3.jpeg" alt="Illustration of a dotted brain pattern glowing on a circuit board, representing neuromorphic computing" style="width:100%; height:100%; object-fit:cover; display:block; opacity:0.92;">
+  </div>
+
+  <section style="padding: var(--space-8) var(--space-8) var(--space-6); max-width: 860px; margin: 0 auto;">
+    <p style="font-family: var(--font-heading); font-size: var(--font-size-3); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow); color: var(--color-purple); margin: 0 0 var(--space-6);">Community Engagement</p>
+    <h1 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading-bold); font-size: 48px; line-height: var(--line-height-tight); color: var(--text-heading); margin: 0 0 var(--space-6);">What the community told us</h1>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">Ahead of drafting, NeuroSYNC ran a stakeholder survey to capture priorities and perspectives from across the UK neuromorphic community before the six research chapters and the industrial applications chapter were written. 56 people responded — researchers and academics, engineers, industry R&D leads, policy and regulatory contacts, and end-users — and their answers shaped both the chapter drafts and the workshop agendas that followed.</p>
+  </section>
+
+  <!-- Who responded -->
+  <section style="background: var(--color-neutral-pale-blue); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">Who responded</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">56 responses, overwhelmingly from researchers and academics, and overwhelmingly UK-based — with a global vantage point on the field's own early stage of maturity.</p>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-8);">
+        <div>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--color-purple); margin: 0 0 var(--space-5);">Primary role</h3>
+          <div style="display:flex; flex-direction:column; gap: var(--space-5);">
+            <sc-for list="{{ roleBars }}" as="b" hint-placeholder-count="5">
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size: var(--font-size-1); margin: 0 0 4px;"><span>{{ b.label }}</span><span style="color: var(--color-text-secondary);">{{ b.count }}</span></div>
+                <div style="background: var(--color-white); border-radius: 4px; height: 10px; overflow:hidden;"><div style="background: var(--color-purple); height:100%; width: {{ b.pct }}%;"></div></div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--color-purple); margin: 0 0 var(--space-5);">Current TRL of their work</h3>
+          <div style="display:flex; flex-direction:column; gap: var(--space-5);">
+            <sc-for list="{{ trlBars }}" as="b" hint-placeholder-count="4">
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size: var(--font-size-1); margin: 0 0 4px;"><span>{{ b.label }}</span><span style="color: var(--color-text-secondary);">{{ b.count }}</span></div>
+                <div style="background: var(--color-white); border-radius: 4px; height: 10px; overflow:hidden;"><div style="background: var(--color-magenta); height:100%; width: {{ b.pct }}%;"></div></div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+      <p style="font-size: var(--font-size-1); line-height: var(--line-height-body); color: var(--color-text-secondary); margin: var(--space-6) 0 0;">49 of 56 respondents work in the UK; the rest spanned the EU, Asia-Pacific and beyond. Almost half described their own work as still at early research (TRL 1–2) — a field that, by its own account, is still forming.</p>
+    </div>
+  </section>
+
+  <!-- Key findings -->
+  <section style="padding: var(--space-8); max-width: 860px; margin: 0 auto;">
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">Key findings</h2>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">Five themes stood out clearly across the responses:</p>
+    <div style="display:flex; flex-direction:column; gap: var(--space-6);">
+      <sc-for list="{{ keyFindings }}" as="f" hint-placeholder-count="5">
+        <div style="display:flex; gap: var(--space-6);">
+          <span style="font-family: var(--font-heading); font-weight: var(--font-weight-heading-bold); font-size: var(--font-size-7); color: var(--color-magenta); line-height: 1; min-width: 40px;">{{ f.n }}</span>
+          <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;"><strong style="color: var(--text-heading);">{{ f.lead }}</strong> {{ f.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Priorities identified -->
+  <section style="background: var(--color-neutral-pale-purple); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">Priorities identified</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">Asked what the roadmap should ultimately deliver, and what stands in the way, respondents were consistent:</p>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-8);">
+        <div>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--color-purple); margin: 0 0 var(--space-5);">Expected outcomes</h3>
+          <div style="display:flex; flex-direction:column; gap: var(--space-5);">
+            <sc-for list="{{ outcomeBars }}" as="b" hint-placeholder-count="4">
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size: var(--font-size-1); margin: 0 0 4px;"><span>{{ b.label }}</span><span style="color: var(--color-text-secondary);">{{ b.count }}</span></div>
+                <div style="background: var(--color-white); border-radius: 4px; height: 10px; overflow:hidden;"><div style="background: var(--color-green); height:100%; width: {{ b.pct }}%;"></div></div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--color-purple); margin: 0 0 var(--space-5);">Adoption barriers</h3>
+          <div style="display:flex; flex-direction:column; gap: var(--space-5);">
+            <sc-for list="{{ barrierBars }}" as="b" hint-placeholder-count="4">
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size: var(--font-size-1); margin: 0 0 4px;"><span>{{ b.label }}</span><span style="color: var(--color-text-secondary);">{{ b.count }}</span></div>
+                <div style="background: var(--color-white); border-radius: 4px; height: 10px; overflow:hidden;"><div style="background: var(--color-blue); height:100%; width: {{ b.pct }}%;"></div></div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gaps and disagreements -->
+  <section style="padding: var(--space-8); max-width: 860px; margin: 0 auto;">
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">Gaps and disagreements</h2>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-6);">Asked directly where the UK stands globally in neuromorphic computing, respondents did not agree — and the spread is itself a finding. The same question produced answers from "leading" to "pretty low down" to "behind the US, China and Germany":</p>
+    <div style="display:flex; flex-direction: column; gap: var(--space-5); margin: 0 0 var(--space-7);">
+      <sc-for list="{{ positionQuotes }}" as="q" hint-placeholder-count="4">
+        <blockquote style="margin:0; padding: var(--space-6) var(--space-7); background: var(--color-neutral-pale-blue); border-radius: var(--radius-card);">
+          <p style="font-style: italic; font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">"{{ q }}"</p>
+        </blockquote>
+      </sc-for>
+    </div>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">That divergence recurs elsewhere: on required funding scale, estimates ranged from "a couple of million pounds annually" for a single research programme to calls for £500M–£1B over 5–10 years at a national level. There's no shared read on where the UK sits, or what it would take to change that — which is itself a gap the roadmap needs to name rather than paper over.</p>
+  </section>
+
+  <!-- What this shaped -->
+  <section style="background: var(--color-neutral-pale-blue); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">What this shaped</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">Survey input fed directly into the roadmap's six research chapters — brain-inspired computing and spiking/plasticity-based approaches came through as the clear scope priority, ahead of analogue/in-memory computing and translation to industry — and into the discussion questions circulated before the Research and Industry workshops. The gaps identified here, particularly around the UK's global position and the scale of funding needed, are being carried forward into the cross-chapter integration work and the case the roadmap makes to funders.</p>
+    </div>
+  </section>
+
+  <!-- Get involved -->
+  <section style="background: var(--color-purple); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto; display:flex; flex-direction: column; gap: var(--space-6);">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--color-white); margin: 0;">Get involved</h2>
+      <div style="display:flex; flex-wrap: wrap; gap: var(--space-6); align-items:center;">
+        <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Button" variant="secondary" href="mailto:neuromorphic@aston.ac.uk" hint-size="auto,40px">Email neuromorphic@aston.ac.uk</x-import>
+        <a href="https://www.uk-neuromorphic-centre.net" style="font-family: var(--font-heading); font-size: var(--font-size-2); color: var(--color-white); text-decoration: underline;">www.uk-neuromorphic-centre.net</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: var(--space-7) var(--space-8); border-top: 1px solid var(--color-neutral-pale-purple); display:flex; align-items:center; justify-content:space-between; flex-wrap: wrap; gap: var(--space-6);">
+    <sc-if value="{{ logoMarkSrc }}" hint-placeholder-val="{{ true }}">
+      <img src="{{ logoMarkSrc }}" alt="NeuroSYNC mark" style="height:40px;width:auto;display:block">
+    </sc-if>
+    <p style="font-size: var(--font-size-5); color: var(--color-text-secondary); margin: 0;">NeuroSYNC — UK Multidisciplinary Centre for Neuromorphic Systems and Computing.</p>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const inBundle = typeof window !== 'undefined' && typeof window.__resources !== 'undefined';
+    const res = (typeof window !== 'undefined' && window.__resources) || {};
+    const logoHorizontalSrc = res.logoHorizontal || (inBundle ? undefined : '_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_3.png');
+    const logoMarkSrc = res.logoMark || (inBundle ? undefined : '_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_6.png');
+
+    function bars(items) {
+      const max = Math.max(...items.map(i => i.count));
+      return items.map(i => ({ label: i.label, count: i.count, pct: Math.round((i.count / max) * 100) }));
+    }
+
+    const roleBars = bars([
+      { label: 'Researcher / Academic', count: 46 },
+      { label: 'Technologist / Engineer', count: 4 },
+      { label: 'Industry R&D / Product Development', count: 3 },
+      { label: 'Policy / Strategy / Regulator', count: 2 },
+      { label: 'End-user / Application Partner', count: 1 },
+    ]);
+
+    const trlBars = bars([
+      { label: 'Early research (TRL 1–2)', count: 23 },
+      { label: 'Laboratory demonstration (TRL 3–4)', count: 25 },
+      { label: 'Pilot / prototype (TRL 5–6)', count: 5 },
+      { label: 'In-market or deployed (TRL 9)', count: 3 },
+    ]);
+
+    const outcomeBars = bars([
+      { label: 'Industrial competitiveness', count: 34 },
+      { label: 'Environmental / Net Zero benefits', count: 20 },
+      { label: 'Economic growth / job creation', count: 17 },
+      { label: 'Societal (health, safety, accessibility)', count: 12 },
+    ]);
+
+    const barrierBars = bars([
+      { label: 'Market readiness / killer application', count: 28 },
+      { label: 'Integration with legacy systems', count: 27 },
+      { label: 'Reliability / certification', count: 24 },
+      { label: 'Cost / economic model', count: 19 },
+    ]);
+
+    const keyFindings = [
+      { n: '01', lead: 'Brain-inspired computing is the clear scope priority.', body: '49 of 56 respondents want spiking- and plasticity-based approaches explicitly in scope, ahead of analogue/in-memory computing (37) and translation to industry (35).' },
+      { n: '02', lead: 'Spiking neural networks lead the algorithms picture.', body: '32 respondents named SNNs among the most promising directions, with local / on-device learning (22) close behind as the strategic differentiator.' },
+      { n: '03', lead: 'Device reliability is the dominant hardware bottleneck.', body: '31 respondents cited variability and device reliability as a top bottleneck — ahead of scalability/interconnect density (24) and CMOS compatibility (15).' },
+      { n: '04', lead: 'Edge AI and sensors is the sector to watch.', body: '38 respondents picked Edge AI/IoT/sensors as the sector where neuromorphic computing could make the biggest difference, ahead of robotics & autonomy (32) and defence/security (27).' },
+      { n: '05', lead: 'The field rates its own maturity as early.', body: 'Resistive/phase-change memristors (11) and hybrid electro-optic architectures (10) topped hardware priorities — candidate technologies, not settled ones.' },
+    ];
+
+    const positionQuotes = [
+      "One of the main leaders.",
+      "The UK is in a strong emerging position... but it is not yet clearly the global leader.",
+      "Quite far behind. The recent investments made by EPSRC is very encouraging but we have a lot of catching up to do.",
+      "Pretty low down.",
+    ];
+
+    return { roleBars, trlBars, outcomeBars, barrierBars, keyFindings, positionQuotes, logoHorizontalSrc, logoMarkSrc };
+  }
+}
+</script>
+</body>
+</html>

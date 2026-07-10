@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<meta name="ext-resource-dependency" content="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_3.png" data-resource-id="logoHorizontal" />
+<meta name="ext-resource-dependency" content="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_6.png" data-resource-id="logoMark" />
+<template id="__bundler_thumbnail" data-bg-color="#5b2d90">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="30" fill="#ffffff" opacity="0.15"/>
+    <text x="50" y="58" font-family="Georgia, serif" font-size="34" fill="#ffffff" text-anchor="middle">N</text>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/styles.css">
+  <script src="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: var(--color-white); }
+    a { color: var(--color-purple); }
+    a:hover { color: var(--color-purple-light); }
+    ::selection { background: var(--color-neutral-pale-purple); }
+  </style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--text-body); background: var(--color-white);" data-screen-label="Roadmap">
+
+  <!-- Top bar -->
+  <header style="display:flex; align-items:center; justify-content:space-between; padding: var(--space-4) var(--space-8); border-bottom: 1px solid var(--color-neutral-pale-purple);">
+    <sc-if value="{{ logoHorizontalSrc }}" hint-placeholder-val="{{ true }}">
+      <img src="{{ logoHorizontalSrc }}" alt="NeuroSYNC – UK Multidisciplinary Centre for Neuromorphic Systems and Computing" style="height:56px;width:auto;display:block">
+    </sc-if>
+    <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Button" variant="outline" href="https://www.uk-neuromorphic-centre.net" hint-size="auto,40px">Back to uk-neuromorphic-centre.net</x-import>
+  </header>
+
+  <!-- Hero image -->
+  <div style="width:100%; height:360px; overflow:hidden; background: var(--color-black);">
+    <img src="assets/brain-chip-1.png" alt="Illustration of a glowing brain hologram rising from a computer chip, representing brain-inspired neuromorphic computing" style="width:100%; height:100%; object-fit:cover; display:block; opacity:0.92;">
+  </div>
+
+  <!-- Hero -->
+  <section style="padding: var(--space-8) var(--space-8) var(--space-4); max-width: 860px; margin: 0 auto;">
+    <p style="font-family: var(--font-heading); font-size: var(--font-size-3); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow); color: var(--color-purple); margin: 0 0 var(--space-6);">Roadmap</p>
+    <h1 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading-bold); font-size: 48px; line-height: var(--line-height-tight); color: var(--text-heading); margin: 0 0 var(--space-6);">The UK Neuromorphic Computing Roadmap</h1>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-6);">Neuromorphic, or brain-inspired, computing takes its cue from how biological nervous systems process information — combining memory and processing the way neurons and synapses do, and computing only when something happens. Done right, it lets AI and complex data-processing run at very low latency, using a fraction of the energy conventional computers need. The global market is forecast to grow from $5.3bn in 2023 to $20bn by 2030, and the UK has a real opportunity to lead in safe, sustainable, brain-inspired computing.</p>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">Getting there needs strategic direction the whole community can align behind. That's what our roadmap work is for.</p>
+  </section>
+
+  <!-- Two complementary roadmaps -->
+  <section style="background: var(--color-neutral-pale-blue); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">Two complementary roadmaps</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">We're building this alongside a parallel effort, so the field gets both a near-term technical foundation and a long-term vision:</p>
+      <div style="display:flex; flex-wrap: wrap; gap: var(--space-6); margin: 0 0 var(--space-7);">
+        <div style="flex: 1 1 320px; background: var(--color-white); border-radius: var(--radius-card); padding: var(--space-7);">
+          <p style="font-family: var(--font-heading); font-size: var(--font-size-3); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow); color: var(--color-purple); margin: 0 0 var(--space-5);">Led by NeuroSYNC — this roadmap</p>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--text-heading); margin: 0 0 var(--space-5);">UK Neuromorphic Computing Roadmap</h3>
+          <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">A near-term, living document setting out the core research and industrial foundations for the next ten years.</p>
+        </div>
+        <div style="flex: 1 1 320px; background: var(--color-white); border-radius: var(--radius-card); padding: var(--space-7);">
+          <p style="font-family: var(--font-heading); font-size: var(--font-size-3); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow); color: var(--color-purple); margin: 0 0 var(--space-5);">Led by NeuroWare</p>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--text-heading); margin: 0 0 var(--space-5);">Neuromorphic Technologies: A Roadmap to 2050</h3>
+          <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">The long-term, policy-facing view: a 25-year vision for how the UK becomes a global leader in brain-inspired computing, written for a broad, non-expert audience.</p>
+        </div>
+      </div>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">Together, the two form a common strategic framework for UK leadership in neuromorphic computing.</p>
+    </div>
+  </section>
+
+  <!-- Our approach -->
+  <section style="padding: var(--space-8); max-width: 860px; margin: 0 auto;">
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">Our approach</h2>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">NeuroSYNC — the UK Multidisciplinary Centre for Neuromorphic Systems and Computing, led by Aston University and backed by £5.6 million from UKRI — is developing the roadmap through our centre teams, working across two connected strands.</p>
+
+    <h3 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--color-purple); margin: 0 0 var(--space-5);">Research foundations</h3>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-6);">Structured around six interconnected chapters. Published open access, updated annually as the field moves, with selected chapters developed further for peer-reviewed journals.</p>
+    <div style="display:flex; flex-wrap: wrap; gap: var(--space-6); margin: 0 0 var(--space-7);">
+      <sc-for list="{{ chapterNames }}" as="ch" hint-placeholder-count="6">
+        <span style="font-family: var(--font-heading); font-size: var(--font-size-1); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow); color: var(--color-purple); background: var(--color-neutral-pale-purple); border-radius: var(--radius-tile); padding: var(--space-5) var(--space-7);">{{ ch }}</span>
+      </sc-for>
+    </div>
+
+    <h3 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--color-purple); margin: 0 0 var(--space-5);">Industrial applications</h3>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-6);">Shifts the focus from what's scientifically possible to what industry actually needs to commit capital — the technical, economic and manufacturing thresholds neuromorphic systems must cross for enterprise-scale adoption. Rather than a fixed list of use cases, it sets out strategic themes for discussion: sovereign edge hardware for secure supply chains, optical neural networks for telecoms capacity, probabilistic solvers for logistics and energy optimisation, high-speed AI control loops for smart manufacturing, and energy-autonomous systems for healthcare and bio-sensing. The aim is to work with industry to set hard technical red lines — power, latency, throughput, legacy-integration requirements — and identify what's needed to cross the commercial "valley of death."</p>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">Both strands are living documents — the first published versions won't be the final word, but versions mature enough to invite the next round of challenge.</p>
+  </section>
+
+  <!-- Founding commitment -->
+  <section style="background: var(--color-neutral-pale-purple); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">A founding commitment, not an add-on</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">Roadmap development isn't a side project — it's one of NeuroSYNC's core funded activities, built into the Centre's programme from the outset as a dedicated strand of work focused on roadmap development and user engagement. Its purpose is to make sure our research priorities are shaped by the community we serve — academia, industry and policy — rather than set behind closed doors.</p>
+    </div>
+  </section>
+
+  <!-- Grounded in independent evidence -->
+  <section style="padding: var(--space-8); max-width: 860px; margin: 0 auto;">
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">Grounded in independent evidence</h2>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">Alongside our own engagement, we're drawing on independent evidence about where the UK actually stands. A SWOT analysis of UK neuromorphic technology — commissioned by the Netherlands Innovation Network UK and NeuMat, published October 2025 — sets out the country's strengths (world-class academic research, a vibrant startup ecosystem, flagship assets like SpiNNaker, Arm and DeepMind), the weaknesses holding the field back (a funding "valley of death" between prototype and scale-up, limited testbeds and manufacturing infrastructure, and fragmented definitions of "neuromorphic" itself), and the opportunities ahead, including closer UK–Netherlands and EU collaboration. This evidence base directly informs our chapter priorities and the case we make to funders and policymakers.</p>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">In parallel, Parliament is asking some of the same questions. The House of Commons Science, Innovation and Technology Committee has opened a "Low-energy computing" inquiry, examining whether neuromorphic computing and silicon photonics can help address the energy demands of AI, and assessing the UK's sovereign capabilities in the area. We're following it closely and feeding in evidence where relevant. <a href="https://committees.parliament.uk/work/9739/lowenergy-computing/publications/" target="_blank" rel="noopener">See the inquiry and its publications →</a></p>
+      <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Card" eyebrow="Evidence base" title="UK SWOT Analysis" action-label="Read the analysis" action-href="uk-swot-analysis.html" hint-size="100%,220px">An independent SWOT analysis of UK neuromorphic technology, published October 2025.</x-import>
+  </section>
+
+  <!-- Built with the community -->
+  <section style="background: var(--color-neutral-pale-blue); padding: var(--space-8);">
+    <div style="max-width: 1040px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">Built with the community, not for one institution</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">We're deliberately building this roadmap through continuous, multidisciplinary stakeholder engagement.</p>
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-7); margin: 0 0 var(--space-7);">
+        <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Card" eyebrow="Survey" title="Survey Results" action-label="See what we heard" action-href="survey-results.html" hint-size="100%,260px">We surveyed the community to capture priorities and perspectives from across the field before drafting began.</x-import>
+        <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Card" eyebrow="28 April 2026 · Conference Aston" title="Industry Workshop Readout" action-label="Read the readout" action-href="industry-workshop-readout.html" hint-size="100%,260px">An Industrial Applications workshop brought industry participants together to pressure-test commercial thresholds and priorities.</x-import>
+        <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Card" eyebrow="29 April 2026 · Aston University" title="Building the UK Neuromorphic Computing Roadmap" action-label="Read the full readout" action-href="research-workshop-briefing.html" hint-size="100%,260px">What we heard from physicists, engineers, neuroscientists, materials scientists, computer scientists and industry at our first Research Workshop, chapter by chapter, plus the six messages that cut across every session.</x-import>
+      </div>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">We're planning further, ongoing engagement: follow-on specialist workshops (starting with materials and devices, run jointly with NeuroWare and NeuMat), then chapter-specific sessions for algorithms, electronics, photonics and neuroscience — alongside a standing user panel of industry, academia and policy representatives reviewing progress, and annual roadmap reports published to keep the process transparent and the roadmap itself under continuous review.</p>
+    </div>
+  </section>
+
+  <!-- Get involved -->
+  <section style="background: var(--color-purple); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto; display:flex; flex-direction: column; gap: var(--space-6);">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--color-white); margin: 0;">Get involved</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); color: rgba(255,255,255,0.85); margin: 0;">The roadmap is strengthened by constructive disagreement. We welcome feedback on chapter direction, flags on missing topics or under-represented UK capabilities, and expressions of interest in follow-on workshops.</p>
+      <div style="display:flex; flex-wrap: wrap; gap: var(--space-6); align-items:center;">
+        <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Button" variant="secondary" href="mailto:neuromorphic@aston.ac.uk" hint-size="auto,40px">Email neuromorphic@aston.ac.uk</x-import>
+        <a href="https://www.uk-neuromorphic-centre.net" style="font-family: var(--font-heading); font-size: var(--font-size-2); color: var(--color-white); text-decoration: underline;">www.uk-neuromorphic-centre.net</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: var(--space-7) var(--space-8); border-top: 1px solid var(--color-neutral-pale-purple); display:flex; align-items:center; justify-content:space-between; flex-wrap: wrap; gap: var(--space-6);">
+    <sc-if value="{{ logoMarkSrc }}" hint-placeholder-val="{{ true }}">
+      <img src="{{ logoMarkSrc }}" alt="NeuroSYNC mark" style="height:40px;width:auto;display:block">
+    </sc-if>
+    <p style="font-size: var(--font-size-5); color: var(--color-text-secondary); margin: 0;">NeuroSYNC — UK Multidisciplinary Centre for Neuromorphic Systems and Computing.</p>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const inBundle = typeof window !== 'undefined' && typeof window.__resources !== 'undefined';
+    const res = (typeof window !== 'undefined' && window.__resources) || {};
+    const logoHorizontalSrc = res.logoHorizontal || (inBundle ? undefined : '_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_3.png');
+    const logoMarkSrc = res.logoMark || (inBundle ? undefined : '_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_6.png');
+
+    const chapterNames = [
+      'Concepts & Vision', 'Neuroscience Foundations', 'Algorithms & Architectures',
+      'Materials', 'Electronics', 'Photonics'
+    ];
+
+    return { chapterNames, logoHorizontalSrc, logoMarkSrc };
+  }
+}
+</script>
+</body>
+</html>
