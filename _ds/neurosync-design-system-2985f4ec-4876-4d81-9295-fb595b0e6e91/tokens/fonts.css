@@ -1,0 +1,13 @@
+/*
+ * Webfonts.
+ *
+ * Headings: Oswald — the real brand heading face, available on Google Fonts,
+ * loaded as-is.
+ *
+ * Body: the brand face is Avenir (licensed, not webfont-available). Substituted
+ * with Jost, a geometric-humanist Google Fonts face with Avenir's proportions
+ * (circular o/e, even stroke weight, similar x-height) — the closest free match.
+ * FLAG: if real Avenir web font files become available, replace this import
+ * and swap --font-body in typography.css back to the Avenir stack.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');

@@ -1,0 +1,49 @@
+/*
+ * NeuroSYNC color tokens.
+ * Primary palette is from the official NeuroSYNC Canva brand kit (verified
+ * source of truth) — always design new material with these.
+ * Legacy tokens were scraped from the live Wix site (uk-neuromorphic-centre.net)
+ * before the brand kit existed and do NOT match it — kept only for historical
+ * site-parity reference. Never use --color-legacy-* for new work.
+ */
+:root {
+  /* --- Primary palette (Canva brand kit) --- */
+  --color-purple: #5b2d90;         /* primary — headings, primary buttons, brand mark */
+  --color-purple-light: #7957a3;   /* hover/secondary emphasis tint of primary */
+  --color-blue: #1f4e9c;           /* secondary */
+  --color-magenta: #e6007e;        /* accent — CTAs, emphasis, event dates */
+  --color-green: #2bb673;          /* accent — energy/sustainability callouts, success */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-neutral-pale-blue: #f5f7ff;    /* subtle background fill */
+  --color-neutral-pale-purple: #f1ecf8;  /* subtle background fill, card borders */
+  --color-text-secondary: rgba(0, 0, 0, 0.65); /* muted body copy — black at reduced opacity */
+
+  /* --- Semantic aliases --- */
+  --surface-page: var(--color-white);
+  --surface-subtle: var(--color-neutral-pale-purple);
+  --surface-card: var(--color-white);
+  --border-card: var(--color-neutral-pale-purple);
+  --text-heading: var(--color-black);
+  --text-body: var(--color-text-secondary);
+  --text-on-brand: var(--color-white);
+  --accent-cta: var(--color-magenta);
+  --accent-sustainability: var(--color-green);
+  --brand-primary: var(--color-purple);
+  --brand-primary-hover: var(--color-purple-light);
+
+  /* --- Legacy (Wix site scrape — historical reference only, do not design with these) --- */
+  --color-legacy-blue: #116dff;
+  --color-legacy-grey-mid: #646464;
+  --color-legacy-accent-red: #df3131;
+  --color-legacy-accent-red-alt: #e84a43;
+  --color-legacy-near-black: #080808;
+  --color-legacy-accent-orange: #ea492e;
+  --color-legacy-blue-dark: #0f2ccf;
+  --color-legacy-blue-mid: #2f5dff;
+  --color-legacy-blue-light: #597dff;
+  --color-legacy-blue-lighter: #acbeff;
+  --color-legacy-blue-pale: #d5dfff;
+  --color-legacy-blue-paler: #eaefff;
+  --color-legacy-blue-palest: #f5f7ff;
+}

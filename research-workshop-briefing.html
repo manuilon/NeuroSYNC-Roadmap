@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<meta name="ext-resource-dependency" content="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_3.png" data-resource-id="logoHorizontal" />
+<meta name="ext-resource-dependency" content="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_6.png" data-resource-id="logoMark" />
+<template id="__bundler_thumbnail" data-bg-color="#5b2d90">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="30" fill="#ffffff" opacity="0.15"/>
+    <text x="50" y="58" font-family="Georgia, serif" font-size="34" fill="#ffffff" text-anchor="middle">N</text>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<![CDATA[<helmet>
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/styles.css">
+  <script src="_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: var(--color-white); }
+    a { color: var(--color-purple); }
+    a:hover { color: var(--color-purple-light); }
+    ::selection { background: var(--color-neutral-pale-purple); }
+  </style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--text-body); background: var(--color-white);" data-screen-label="Research Workshop Briefing">
+
+  <!-- Top bar -->
+  <header style="display:flex; align-items:center; justify-content:space-between; padding: var(--space-4) var(--space-8); border-bottom: 1px solid var(--color-neutral-pale-purple);">
+    <sc-if value="{{ logoHorizontalSrc }}" hint-placeholder-val="{{ true }}">
+      <img src="{{ logoHorizontalSrc }}" alt="NeuroSYNC – UK Multidisciplinary Centre for Neuromorphic Systems and Computing" style="height:56px;width:auto;display:block">
+    </sc-if>
+    <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Button" variant="outline" href="index.html" hint-size="auto,40px">← Back to Roadmap</x-import>
+  </header>
+
+  <!-- Hero -->
+  <section style="padding: var(--space-8) var(--space-8) var(--space-4); max-width: 860px; margin: 0 auto;">
+    <p style="font-family: var(--font-heading); font-size: var(--font-size-3); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow); color: var(--color-purple); margin: 0 0 var(--space-6);">Public Briefing</p>
+    <h1 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading-bold); font-size: 48px; line-height: var(--line-height-tight); color: var(--text-heading); margin: 0 0 var(--space-4);">Building the UK Neuromorphic Computing Roadmap</h1>
+    <p style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--color-text-secondary); margin: 0 0 var(--space-7);">Outcomes from the NeuroSYNC Research Workshop — 29 April 2026, Aston University, Birmingham</p>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">On 29 April 2026, NeuroSYNC brought together researchers, engineers and industry partners from across the UK neuromorphic community to stress-test draft content for the UK Neuromorphic Computing Research Roadmap — a living, ten-year roadmap of the research foundations for brain-inspired computing. This briefing summarises what the community told us, and how it is shaping the roadmap ahead of its first open-access release, planned for late 2026.</p>
+  </section>
+
+  <!-- Why neuromorphic computing matters -->
+  <section style="background: var(--color-neutral-pale-blue); padding: var(--space-8); ">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">Why neuromorphic computing matters</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-6);">Neuromorphic, or brain-inspired, computing is an emerging technology that takes inspiration from how biological nervous systems process information. By bringing memory and processing together — as neurons and synapses do — and by computing only when events occur, neuromorphic systems can run AI and complex data-processing tasks with very low latency while using a fraction of the energy required by conventional computers.</p>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">This matters because demand for AI is pushing today's computing technology, and the energy systems behind it, to their limits. The global neuromorphic computing market is forecast to grow from $5.3 billion in 2023 to $20 billion by 2030<sup>[1]</sup>, driven by demand for low-power, real-time AI in sectors such as next-generation semiconductors, telecommunications, healthcare, robotics and autonomous systems.</p>
+      <blockquote style="margin: 0; padding: var(--space-7) var(--space-8); background: var(--color-white); border-radius: var(--radius-card);">
+        <p style="font-family: var(--font-heading); font-style: italic; font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--color-purple); line-height: var(--line-height-tight); margin: 0 0 var(--space-6);">"Future computing paradigms [such as] neuromorphic computing, inspired by the brain's really remarkable energy efficiency, could fundamentally transform how AI operate"</p>
+        <p style="font-family: var(--font-heading); font-size: var(--font-size-1); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow); color: var(--color-text-secondary); margin: 0;">Lord Vallance, UK Science Minister<sup>[2]</sup></p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- National roadmap -->
+  <section style="padding: var(--space-8); max-width: 860px; margin: 0 auto;">
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">A national research roadmap, built with the community</h2>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-6);">NeuroSYNC, the UK Multidisciplinary Centre for Neuromorphic Systems and Computing, is led by Aston University and backed by a £5.6 million investment from UK Research &amp; Innovation (UKRI). The Centre is developing the UK Neuromorphic Computing Roadmap: a near-term, living roadmap setting out the core research foundations for the field over the next ten years. It will be published open access, updated annually to reflect the rapid pace of the field, and selected chapters will be developed for peer-reviewed publication.</p>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">The research roadmap is structured around six interconnected chapters, and sits alongside the longer-term, policy-facing roadmap 'Neuromorphic Technologies: A Roadmap to 2050', led by the NeuroWare Innovation &amp; Knowledge Centre. Together, the two roadmaps form a common strategic framework for UK leadership in brain-inspired computing.</p>
+    <div style="display:flex; flex-wrap: wrap; gap: var(--space-6);">
+      <sc-for list="{{ chapterNames }}" as="ch" hint-placeholder-count="6">
+        <span style="font-family: var(--font-heading); font-size: var(--font-size-1); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow); color: var(--color-purple); background: var(--color-neutral-pale-purple); border-radius: var(--radius-tile); padding: var(--space-5) var(--space-7);">{{ ch }}</span>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- The workshop -->
+  <section style="background: var(--color-neutral-pale-purple); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">The workshop: inviting challenge, not validation</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">The Research Workshop, held at Aston University in Birmingham on 29 April 2026, was deliberately designed as a working day rather than a showcase. Draft chapter summaries and discussion questions were circulated in advance, and each of the six chapter sessions combined a short presentation with structured table discussion and report-back, closing with a cross-chapter integration session on system-level dependencies and gaps. The room brought together physicists, engineers, neuroscientists, materials scientists, computer scientists and industry participants — exactly the breadth a multidisciplinary roadmap needs.</p>
+      <blockquote style="margin: 0 0 var(--space-7); padding: var(--space-7) var(--space-8); background: var(--color-white); border-radius: var(--radius-card);">
+        <p style="font-family: var(--font-heading); font-style: italic; font-weight: var(--font-weight-heading); font-size: var(--font-size-6); color: var(--color-purple); line-height: var(--line-height-tight); margin: 0;">"We are not presenting finished chapters. We are stress-testing draft content against expert scrutiny — and we are looking for genuine feedback and challenge, not validation."</p>
+      </blockquote>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">The workshop was not intended to produce consensus on every question, and in several areas significant differences in emphasis and strategic direction remain. Its purpose was to identify where the community is converging, where uncertainty remains, and where further evidence and discussion are needed.</p>
+    </div>
+  </section>
+
+  <!-- What we heard -->
+  <section style="padding: var(--space-8); max-width: 1040px; margin: 0 auto;">
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-7); text-align: center;">What we heard — chapter by chapter</h2>
+    <div style="display:grid; grid-template-columns: repeat({{ chapterColumns }}, 1fr); gap: var(--space-7);">
+      <sc-for list="{{ chapters }}" as="chapter" hint-placeholder-count="6">
+        <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Card" eyebrow="{{ chapter.eyebrow }}" title="{{ chapter.lead }}" hint-size="100%,280px">{{ chapter.body }}</x-import>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Six messages -->
+  <section style="background: var(--color-neutral-pale-blue); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-7);">Six messages that cut across every session</h2>
+      <div style="display:flex; flex-direction: column; gap: var(--space-7);">
+        <sc-for list="{{ crossCutting }}" as="msg" hint-placeholder-count="6">
+          <div style="display:flex; gap: var(--space-6);">
+            <span style="font-family: var(--font-heading); font-weight: var(--font-weight-heading-bold); font-size: var(--font-size-7); color: var(--color-magenta); line-height: 1; min-width: 40px;">{{ msg.n }}</span>
+            <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;"><strong style="color: var(--text-heading);">{{ msg.lead }}</strong> {{ msg.body }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- What happens next -->
+  <section style="padding: var(--space-8); max-width: 860px; margin: 0 auto;">
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--text-heading); margin: 0 0 var(--space-6);">What happens next</h2>
+    <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0 0 var(--space-7);">Chapter teams are revising their drafts to reflect the workshop discussion. Where the day surfaced the need for deeper, specialist conversation, dedicated follow-on workshops will be convened — beginning with materials and devices, run jointly with NeuroWare and NeuMat, and continuing with chapter-specific sessions for algorithms, electronics, photonics and neuroscience. The roadmap is a living document: the first published version will not be the final word, but the version mature enough to invite the next round of challenge.</p>
+    <div style="display:flex; flex-direction: column; gap: 0;">
+      <sc-for list="{{ timeline }}" as="step" hint-placeholder-count="4">
+        <div style="display:flex; gap: var(--space-7); padding: var(--space-6) 0; border-top: 1px solid var(--color-neutral-pale-purple);">
+          <span style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-2); color: var(--color-purple); min-width: 90px; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase;">{{ step.when }}</span>
+          <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); margin: 0;">{{ step.what }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Get involved -->
+  <section style="background: var(--color-purple); padding: var(--space-8);">
+    <div style="max-width: 860px; margin: 0 auto; display:flex; flex-direction: column; gap: var(--space-6);">
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-weight-heading); font-size: var(--font-size-7); color: var(--color-white); margin: 0;">Get involved</h2>
+      <p style="font-size: var(--font-size-2); line-height: var(--line-height-body); color: rgba(255,255,255,0.85); margin: 0;">The roadmap is being built for the UK community as a whole, not for any one institution — and it is strengthened by constructive disagreement. We welcome written feedback on any chapter direction, suggestions of missing topics and under-represented UK capabilities, and expressions of interest in chapter-specific follow-on workshops. Industry and end-user partners are particularly invited to propose candidate 'killer applications' and to share realistic deployment constraints — precision, latency, power envelope and integration requirements — which shape the chapters directly.</p>
+      <div style="display:flex; flex-wrap: wrap; gap: var(--space-6); align-items:center;">
+        <x-import component-from-global-scope="NeuroSYNCDesignSystem_2985f4.Button" variant="secondary" href="mailto:neuromorphic@aston.ac.uk" hint-size="auto,40px">Email neuromorphic@aston.ac.uk</x-import>
+        <a href="https://www.uk-neuromorphic-centre.net" style="font-family: var(--font-heading); font-size: var(--font-size-2); color: var(--color-white); text-decoration: underline;">www.uk-neuromorphic-centre.net</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: var(--space-7) var(--space-8); border-top: 1px solid var(--color-neutral-pale-purple); display:flex; align-items:center; justify-content:space-between; flex-wrap: wrap; gap: var(--space-6);">
+    <sc-if value="{{ logoMarkSrc }}" hint-placeholder-val="{{ true }}">
+      <img src="{{ logoMarkSrc }}" alt="NeuroSYNC mark" style="height:40px;width:auto;display:block">
+    </sc-if>
+    <p style="font-size: var(--font-size-5); color: var(--color-text-secondary); margin: 0;">NeuroSYNC — UK Multidisciplinary Centre for Neuromorphic Systems and Computing.</p>
+  </footer>
+
+</div>
+]]>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1040}, &quot;chapterColumns&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: 3, &quot;options&quot;: [2, 3], &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Layout&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const chapterColumns = this.props.chapterColumns ?? 3;
+    const res = (typeof window !== 'undefined' && window.__resources) || {};
+    const logoHorizontalSrc = res.logoHorizontal || '_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_3.png';
+    const logoMarkSrc = res.logoMark || '_ds/neurosync-design-system-2985f4ec-4876-4d81-9295-fb595b0e6e91/assets/logos/neurosync/NeuroSYNC_6.png';
+
+    const chapterNames = [
+      'Concepts & Vision', 'Neuroscience Foundations', 'Algorithms & Architectures',
+      'Materials', 'Electronics', 'Photonics'
+    ];
+
+    const chapters = [
+      {
+        eyebrow: 'Concepts & Vision',
+        lead: 'Prof Sergei Turitsyn',
+        body: "Neuromorphic computing was framed as a co-design problem spanning neuroscience, algorithms, materials, devices and systems — not a hardware question alone. The community supported a two-track view: near-term hybrid integration, and longer-term, physics-native computing. Benchmarking standards, integrated demonstrators and credible deployment pathways were named as five-year priorities; the absence of a unified theoretical framework was flagged as a real, cross-cutting limitation."
+      },
+      {
+        eyebrow: 'Neuroscience Foundations',
+        lead: 'Prof Paul Roach',
+        body: "The strongest signal was a shift away from replicating the brain, towards extracting useful computational principles from biology and proving their value through working systems. Dendritic integration, multi-scale interaction, and the roles of noise and sparsity were named as under-explored areas of UK strength. Biological computing was flagged as a complementary track, with fragmented language named a bigger barrier than any single technical bottleneck."
+      },
+      {
+        eyebrow: 'Algorithms & Architectures',
+        lead: 'Prof Natalia Berloff',
+        body: "The most actively debated session. Digital spiking neural networks — SpiNNaker, Akida, Loihi, FPGA — were endorsed as the most credible near-term route, while local and unsupervised learning rules (STDP) were elevated as the most strategically important underrepresented direction. Participants asked for explainability as a first-class pillar, a named 'killer application', and for quantum approaches to remain exploratory."
+      },
+      {
+        eyebrow: 'Materials',
+        lead: 'Prof Yang Hao',
+        body: "Discussion converged on three candidate families: phase-change materials, ferroelectrics, and 2D materials (few-layer). Participants asked the chapter to broaden beyond memristive systems, to make energy-per-operation the headline benchmark, and to recognise sensing-first routes to market. A follow-on materials and devices workshop with NeuroWare and NeuMat was agreed."
+      },
+      {
+        eyebrow: 'Electronics',
+        lead: 'Prof Dimitra Georgiadou',
+        body: "The session reframed the central bottleneck: not the compute substrate, but the conversion interface between analogue/photonic stages and digital systems. The community endorsed a hybrid future — neuromorphic as one co-processor among several, deployed close to the sensor. Participants asked for training-cost benchmarks and a credible CMOS-only fallback via FPGA-implemented spiking networks."
+      },
+      {
+        eyebrow: 'Photonics',
+        lead: 'Prof Antonio Hurtado',
+        body: "The clearest convergence of the day. Photonics is strongest on bandwidth, parallelism and speed — the community supported optics for high-bandwidth linear operations, electronics for nonlinearity and control. Machine-learning accelerators were the most immediate impact pathway; TOPS/W, throughput and latency were adopted as headline metrics."
+      },
+    ];
+
+    const crossCutting = [
+      { n: '01', lead: 'Application framing comes first.', body: "Every session asked for clearer answers to 'what is this for?', with several calling for a named killer application the field can rally around and funders can recognise." },
+      { n: '02', lead: 'Hybrid systems are the credible deployment story.', body: 'Whether analogue/digital, electronic/photonic, neuromorphic/conventional or bio/silicon — co-design, not single-paradigm replacement, is the strongest near-term narrative.' },
+      { n: '03', lead: 'Benchmarking must be system-level.', body: 'Chip-level energy is not enough: benchmarks should include training cost, conversion overhead and energy at the wall, and be honest about application dependence.' },
+      { n: '04', lead: 'Explainability is a UK opportunity.', body: 'Trustworthy, interpretable neuromorphic AI was raised independently at multiple tables and identified as a differentiator worth investing in.' },
+      { n: '05', lead: 'Shared definitions matter more than we think.', body: 'The roadmap will carry a short, authoritative glossary covering recurring terms across neuroscience, electronics, photonics and computing.' },
+      { n: '06', lead: 'Demonstrators matter.', body: 'Integrated, experimentally validated systems that connect algorithms, devices and applications were consistently prioritised over abstract scaling claims.' },
+    ];
+
+    const timeline = [
+      { when: 'Q2 2026', what: 'Chapter revisions incorporating workshop feedback; materials follow-on workshop scheduled.' },
+      { when: 'Q3 2026', what: 'Chapter-specific follow-on workshops; cross-chapter alignment on a shared benchmarking rubric and glossary.' },
+      { when: 'Q4 2026', what: 'First open-access release of the research roadmap; selected chapters developed for peer-reviewed publication.' },
+      { when: 'From 2027', what: 'Annual updates reflecting the rapid pace of the field.' },
+    ];
+
+    return { chapterColumns, chapterNames, chapters, crossCutting, timeline, logoHorizontalSrc, logoMarkSrc };
+  }
+}
+</script>
+</body>
+</html>
